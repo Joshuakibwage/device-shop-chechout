@@ -1,4 +1,4 @@
- 
+import { IoChevronDown } from "react-icons/io5";
 
 const Hero = () => {
   return (
@@ -11,15 +11,15 @@ const Hero = () => {
             className="w-[100%] h-full object-cover object-center"
             />
             <div className="w-full h-[80px] absolute z-1 top-0 left-0 flex justify-center gap-4 items-center  ">
-                <h1 className="text-white font-bold text-2xl mt-8">Checkout</h1>
+                <h1 className="text-white font-bold text-2xl my-2">Checkout</h1>
                 <p 
-                  className="bg-[#1D1D1F] px-3 py-1 rounded-full text-white text-sm font-bold mt-8"
+                  className="bg-[#1D1D1F] px-3 py-1 rounded-full text-white text-sm font-bold my-2"
                 >3 ITEMS</p>
             </div>
         </div>
 
-        <section className="w-[90%] flex flex-col md:flex-row absolute top-[20%] left-[5%] rounded-xl
-        overflow-hidden">
+        <section className="w-[90%] flex flex-col md:flex-row absolute top-[10%] left-[5%] rounded-xl
+        overflow-hidden mb-6">
           <div className="w-full md:w-1/2 bg-[#E5E7EB] ">
             
             <div className="w-full m-5 flex">
@@ -129,8 +129,60 @@ const Hero = () => {
             </div>
 
           </div>
-          <div className="w-full md:w-1/2 bg-[#FFFFFF] ">
-            contact section
+          <div className="w-full md:w-1/2 bg-[#FFFFFF] mb-8">
+            <div className="w-full m-5">
+              <h1 className="font-bold text-[#394150]">Contact Information</h1>
+              <div className="mt-16">
+                <label className="text-[#394150] font-bold ">First & Last name</label>
+                <div className="mt-2 mb-8">
+                  <input 
+                    type="text" 
+                    placeholder="Enter first & last name"
+                    className="bg-[#E5E7EB] border border-[#D2D5DA] w-[90%] pl-6 py-4 rounded-md"
+                  />
+                </div>
+
+                <label className="text-[#394150] font-bold">Email Address</label>
+                <div className="mt-2 mb-8">
+                  <input 
+                    type="text" 
+                    placeholder="Enter email address"
+                    className="bg-[#E5E7EB] border border-[#D2D5DA] w-[90%] pl-6 py-4 rounded-md"
+                  />
+                </div>
+                
+                <div className="flex w-full gap-10">
+                  <div>
+                    <label className="text-[#394150] font-bold">Country</label>
+                    <div className="flex flex-row items-center bg-[#E5E7EB] border border-[#D2D5DA]
+                    w-full justify-between pl-6 py-4 rounded-md mt-2">
+                      <input 
+                        type="text" 
+                        placeholder="Finland"
+                        className=""
+                      />
+                      <IoChevronDown className="mr-4"/>
+                    </div>
+                  </div>
+                  
+                  <div className="">
+                    <label className="">Postal Code</label>
+                    <div className=" bg-[#E5E7EB] border border-[#D2D5DA]
+                    w-full pl-6 py-4 rounded-md mt-2 ">
+                      <input 
+                        type="text" 
+                        placeholder="00270"
+                        className=""
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <button className="bg-[#1D1D1F] text-white font-bold  w-[90%] py-4 rounded-md mt-10">
+                  Continue
+                </button>
+              </div>
+            </div>
           </div>
         </section>
         
