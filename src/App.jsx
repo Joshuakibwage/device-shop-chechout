@@ -1,8 +1,11 @@
+import Hero from "./pages/Hero"
 
  
  const App = () => {
    return (
-     <div>App</div>
+     <main>
+        <Hero />
+     </main>
    )
  }
  
